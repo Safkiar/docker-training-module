@@ -7,3 +7,26 @@ services:
       - .:/app
 
 # docker compose up
+# docker compose down
+
+
+# services:
+  # Pierwszy kontener 
+  # moj-koci-serwer:
+    # build: .                 
+    # ports:
+      # - "8000:8000"
+
+  # Drugi kontener (Gotowa baza danych z internetu)
+  # kocia-baza-danych:
+    # image: postgres:15       #
+    # environment:
+      # - POSTGRES_PASSWORD=tajnehaslo
+    # ports:
+      # - "5432:5432"
+
+
+# kubernetes:
+# generate containers when overload
+# auto-replace broken containers
+# turn off some containers untill all of them are updates
